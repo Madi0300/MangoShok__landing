@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Манго & Шок — Производство спелого манго в премиальном шоколаде</title>
+
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Стили -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Навигация -->
+    <header id="header">
+        <a href="#" class="logo">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="var(--mango)" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12,2C6.48,2 2,6.48 2,12C2,17.52 6.48,22 12,22C17.52,22 22,17.52 22,12C22,6.48 17.52,2 12,2M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20Z" fill="var(--choco-dark)"/>
+                <path d="M15.5,10.5C15.5,10.5 13.5,8.5 10.5,8.5C7.5,8.5 6.5,11.5 6.5,11.5C6.5,11.5 8.5,13.5 11.5,13.5C14.5,13.5 15.5,10.5 15.5,10.5Z" />
+            </svg>
+            Манго<span>Шок</span>
+        </a>
+        
+        <nav class="nav-links">
+            <a href="#about">О нас</a>
+            <a href="#products">Ассортимент</a>
+            <a href="#calculator">Заказ</a>
+            <a href="#reviews">Отзывы</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact-form">Обратная связь</a>
+        </nav>
+
+        <button class="mobile-menu-btn" id="mobileBtn">☰</button>
+    </header>
+
+    <!-- Главный экран -->
+    <section class="hero">
+        <div class="hero-blob"></div>
+        <div class="hero-content fade-up">
+            <h1>Тропики<br> <span class="accent-font">в шоколаде</span></h1>
+            <p>Идеальный баланс сочного, спелого тайского манго и премиального бельгийского шоколада ручной работы. Попробуйте лето на вкус.</p>
+            <a href="#products" class="btn-primary">Смотреть каталог</a>
+        </div>
+        <div class="hero-image-wrapper fade-up">
+            <img src="https://images.unsplash.com/photo-1628801267812-78d10cc8cbdf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="" class="hero-image" style="border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; object-fit: cover; height: 400px;">
+        </div>
+    </section>
+
+    <!-- Блок преимуществ -->
+    <section class="features" id="about">
+        <div class="choco-drip-top"></div>
+        <h2 class="fade-up">Почему мы <span class="accent-font">особенные</span>?</h2>
+        <div class="features-grid">
+            <div class="feature-card fade-up">
+                <div class="feature-icon">🥭</div>
+                <h3>Отборное манго</h3>
+                <p>Мы используем только сорт King Mango. Никаких цукатов или сушеных кусочков — только натуральные, сочные и мясистые слайсы.</p>
+            </div>
+            <div class="feature-card fade-up" style="transition-delay: 0.2s;">
+                <div class="feature-icon">🍫</div>
+                <h3>Бельгийский шоколад</h3>
+                <p>Покрываем фрукты темным, молочным и белым шоколадом высшего качества. 100% какао-масло, без заменителей.</p>
+            </div>
+            <div class="feature-card fade-up" style="transition-delay: 0.4s;">
+                <div class="feature-icon">🤲</div>
+                <h3>Ручная работа</h3>
+                <p>Каждый кусочек манго бережно окунается в темперированный шоколад нашими мастерами-шоколатье.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ассортимент -->
+    <section class="products" id="products">
+        <div class="products-header fade-up">
+            <h2 class="accent-font">Наш ассортимент</h2>
+            <p>Выберите свое идеальное сочетание</p>
+        </div>
+        
+        <div class="products-grid">
+            <div class="product-card fade-up">
+                <img src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?auto=format&fit=crop&w=500&q=80" alt="" class="product-img">
+                <h3>Нежная классика</h3>
+                <p>Спелое манго, покрытое толстым слоем нежного молочного шоколада (33% какао). Идеально для сладкоежек.</p>
+                <span class="price">890 ₽ / 150г</span>
+                <button class="btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">В корзину</button>
+            </div>
+
+            <div class="product-card fade-up" style="transition-delay: 0.2s;">
+                <img src="https://images.unsplash.com/photo-1511381939415-e44015466834?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="" class="product-img">
+                <h3>Темная страсть</h3>
+                <p>Контраст сладкого экзотического фрукта и терпкого темного бельгийского шоколада (70% какао). Выбор гурманов.</p>
+                <span class="price">950 ₽ / 150г</span>
+                <button class="btn-primary">Заказать хит</button>
+            </div>
+
+            <div class="product-card fade-up" style="transition-delay: 0.4s;">
+                <img src="1.jpg" alt="" class="product-img">
+                <h3>Тропический рай</h3>
+                <p>Манго в белом шоколаде с добавлением натуральной кокосовой стружки. Взрыв экзотических вкусов.</p>
+                <span class="price">920 ₽ / 150г</span>
+                <button class="btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">В корзину</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Процесс производства -->
+    <section class="process" id="process">
+        <h2 class="fade-up">Как мы создаем магию</h2>
+        <div class="process-steps">
+            <div class="step fade-up">
+                <div class="step-number">1</div>
+                <h3>Отбор фруктов</h3>
+                <p>Мы привозим лучшие сорта манго, нарезаем толстыми слайсами и бережно вялим без добавления сахара.</p>
+            </div>
+            <div class="step fade-up" style="transition-delay: 0.2s;">
+                <div class="step-number">2</div>
+                <h3>Темперирование</h3>
+                <p>Настоящий бельгийский шоколад проходит процесс темперирования, чтобы стать хрустящим и глянцевым.</p>
+            </div>
+            <div class="step fade-up" style="transition-delay: 0.4s;">
+                <div class="step-number">3</div>
+                <h3>Глазировка</h3>
+                <p>Каждый слайс вручную окунается в шоколадную ванну, посыпается декором и отправляется на застывание.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Калькулятор заказа -->
+    <section class="calculator" id="calculator">
+        <div class="calc-container fade-up">
+            <h2>Соберите свой <span class="accent-font">идеальный набор</span></h2>
+            <form id="calcForm">
+                <div class="calc-grid">
+                    <div class="calc-group">
+                        <label>Сорт манго (основа):</label>
+                        <select id="mangoType" class="calc-input">
+                            <option value="1">King Mango (Классика) - Базовая цена</option>
+                            <option value="1.2">Keitt (С легкой кислинкой) - Наценка x1.2</option>
+                            <option value="1.4">Alphonso (Королевский сладкий) - Наценка x1.4</option>
+                        </select>
+                    </div>
+                    <div class="calc-group">
+                        <label>Вид шоколада:</label>
+                        <select id="chocoType" class="calc-input">
+                            <option value="0">Темный 70% (Бельгия)</option>
+                            <option value="0">Молочный 33%</option>
+                            <option value="0">Белый шоколад</option>
+                            <option value="150">Ruby (Розовый шоколад) +150₽/100г</option>
+                            <option value="250">Без сахара (на стевии) +250₽/100г</option>
+                        </select>
+                    </div>
+                    <div class="calc-group">
+                        <label style="display: flex; justify-content: space-between;">
+                            <span>Объем:</span>
+                            <span id="weightLabel" style="color: var(--mango); font-weight: 800;">250 г</span>
+                        </label>
+                        <input type="range" id="weight" min="100" max="1500" step="50" value="250" class="calc-slider">
+                        <div style="display: flex; justify-content: space-between; font-size: 0.8rem; color: #888; margin-top: 5px;">
+                            <span>100г</span>
+                            <span>1.5кг</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="calc-result">
+                    Итоговая стоимость: <br>
+                    <span id="totalPrice">0</span> ₽
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="reviews" id="reviews">
+        <div class="choco-drip-top" style="transform: rotate(180deg); top: -2px;"></div>
+        <h2 class="fade-up">Что говорят <span class="accent-font">клиенты</span></h2>
+        <div class="reviews-grid">
+            <div class="review-card fade-up">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Это просто нереально вкусно! Манго сочное, а темный шоколад идеально оттеняет сладость. Заказываю уже третий раз на подарки коллегам."</p>
+                <h4>— Анна С.</h4>
+            </div>
+            <div class="review-card fade-up" style="transition-delay: 0.2s;">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Брала белый шоколад с кокосом. Это как баунти, только в 100 раз круче и натуральнее! Очень красивая упаковка, идеально для презента."</p>
+                <h4>— Елена В.</h4>
+            </div>
+            <div class="review-card fade-up" style="transition-delay: 0.4s;">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Долго сомневался насчет манго в рубиновом шоколаде, но это отвал башки! Легкая ягодная кислинка шоколада и сладкое манго. Топ!"</p>
+                <h4>— Михаил Д.</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Частые вопросы -->
+    <section class="faq" id="faq">
+        <h2 class="fade-up">Частые <span class="accent-font">вопросы</span></h2>
+        <div class="faq-container fade-up">
+            <details>
+                <summary>Как долго хранится манго в шоколаде?</summary>
+                <div class="faq-content">При комнатной температуре (до 22°C) срок годности составляет 30 дней. Если хранить в холодильнике, десерт сохранит свои свойства до 3 месяцев. Однако мы рекомендуем есть его свежим!</div>
+            </details>
+            <details>
+                <summary>Можно ли сделать заказ для аллергиков?</summary>
+                <div class="faq-content">Да! Мы тщательно следим за производством. У нас есть отдельная линейка на темном шоколаде без следов молока, а также варианты без добавления сахара (на стевии). Обязательно предупредите нас о вашей аллергии при заказе.</div>
+            </details>
+            <details>
+                <summary>Вы доставляете в другие города?</summary>
+                <div class="faq-content">Мы осуществляем курьерскую доставку по Москве и МО. Доставка по России возможна транспортными компаниями (СДЭК, Boxberry) в специальных термобоксах, чтобы шоколад не растаял в пути.</div>
+            </details>
+            <details>
+                <summary>Можно ли заказать корпоративные наборы с нашим логотипом?</summary>
+                <div class="faq-content">Конечно. При заказе от 20 штук мы можем брендировать упаковку: нанести ваш логотип на коробки, ленты и открытки. Оставьте заявку в форме ниже, и мы вышлем вам коммерческое предложение.</div>
+            </details>
+        </div>
+    </section>
+
+    <!-- Форма обратной связи -->
+    <section class="contact-section" id="contact-form">
+        <div class="contact-container fade-up">
+            <h2>Остались вопросы? <span class="accent-font">Напишите нам</span></h2>
+            <form class="form-wrapper" id="contactForm">
+                <input type="text" placeholder="Ваше имя" required class="contact-input">
+                <input type="tel" placeholder="Ваш номер телефона" required class="contact-input" pattern="[0-9\-\+\s\(\)]*">
+                <textarea placeholder="Ваш комментарий или вопрос" rows="4" class="contact-input" required></textarea>
+                <button type="submit" class="btn-primary">Отправить заявку</button>
+                <p style="font-size: 0.8rem; color: #888; margin-top: -10px;">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer id="contacts">
+        <div class="footer-content">
+            <div class="footer-col">
+                <div class="footer-logo">Манго<span>Шок</span></div>
+                <p>Свежесть тропиков и премиальный шоколад, созданные дарить радость в каждом кусочке.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Контакты</h4>
+                <p>📍 г. Москва, ул. Вкусная, д. 1</p>
+                <p>📞 +7 (999) 123-45-67</p>
+                <p>✉️ hello@mangochoc.ru</p>
+            </div>
+            <div class="footer-col">
+                <h4>Для клиентов</h4>
+                <a href="#">Доставка и оплата</a>
+                <a href="#">Оптовые закупки</a>
+                <a href="#">Корпоративные подарки</a>
+                <a href="#">Политика конфиденциальности</a>
+            </div>
+            <div class="footer-col">
+                <h4>Мы в соцсетях</h4>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><img src="vk.svg" alt="VK" /></a>
+                    <a href="#" class="social-icon"><img src="telegram_icon_colored.svg" alt="telegram_icon" /> </a>
+                    <a href="#" class="social-icon"><img src="instagram.svg" alt="Instagram" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Компания «Манго & Шок». Все права защищены. Дизайн создан специально для вас.
+        </div>
+    </footer>
+
+    <!-- Демо-модалка -->
+    <div class="demo-modal-overlay" id="demoModal">
+        <div class="demo-modal">
+            <span class="demo-modal-icon">🍫</span>
+            <h3>Это демо-версия</h3>
+            <p>Кнопки на сайте носят демонстративный характер и не выполняют реальных действий.</p>
+            <button class="btn-primary demo-modal-close" id="demoModalClose">Понятно!</button>
+        </div>
+    </div>
+
+    <!-- Скрипты -->
+    <script src="script.js"></script>
+</body>
+</html>
