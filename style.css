@@ -44,6 +44,14 @@ a {
     color: inherit;
 }
 
+/* ================= Контейнер ================= */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
 /* ================= Анимации при скролле ================= */
 .fade-up {
     opacity: 0;
@@ -62,18 +70,21 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 5%;
+    padding: 20px 0;
+    z-index: 1000;
+    transition: var(--transition);
+}
+
+header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1000;
-    transition: var(--transition);
 }
 
 header.scrolled {
     background-color: var(--choco-dark);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    padding: 10px 5%;
+    padding: 10px 0;
 }
 
 header.scrolled .logo,
@@ -155,12 +166,16 @@ header.scrolled .nav-links a {
 /* ================= Главный экран (Hero) ================= */
 .hero {
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    padding: 0 5%;
+    padding: 0;
     position: relative;
     overflow: hidden;
     background: radial-gradient(circle at 80% 50%, var(--mango-light) 0%, var(--bg-light) 60%);
+}
+
+.hero > .container {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .hero-blob {
@@ -253,7 +268,7 @@ header.scrolled .nav-links a {
 
 /* ================= О нас / Преимущества ================= */
 .features {
-    padding: 100px 5%;
+    padding: 100px 0;
     background-color: var(--choco-dark);
     color: var(--white);
     position: relative;
@@ -302,7 +317,7 @@ header.scrolled .nav-links a {
 
 /* ================= Продукция (Ассортимент) ================= */
 .products {
-    padding: 120px 5%;
+    padding: 120px 0;
     background-color: var(--bg-light);
     position: relative;
 }
@@ -387,7 +402,7 @@ header.scrolled .nav-links a {
 
 /* ================= Блок «Как мы это делаем» ================= */
 .process {
-    padding: 100px 5%;
+    padding: 100px 0;
     background: var(--mango);
     color: var(--choco-dark);
     position: relative;
@@ -457,7 +472,7 @@ header.scrolled .nav-links a {
 
 /* ================= Калькулятор ================= */
 .calculator {
-    padding: 100px 5%;
+    padding: 100px 0;
     background-color: var(--bg-light);
 }
 
@@ -539,7 +554,7 @@ header.scrolled .nav-links a {
 
 /* ================= Отзывы ================= */
 .reviews {
-    padding: 100px 5%;
+    padding: 100px 0;
     background: var(--choco-dark);
     color: var(--white);
     text-align: center;
@@ -594,7 +609,7 @@ header.scrolled .nav-links a {
 
 /* ================= Частые вопросы (FAQ) ================= */
 .faq {
-    padding: 100px 5%;
+    padding: 100px 0;
     background-color: var(--bg-light);
 }
 
@@ -668,7 +683,7 @@ header.scrolled .nav-links a {
 
 /* ================= Форма связи ================= */
 .contact-section {
-    padding: 100px 5%;
+    padding: 100px 0;
     background: var(--mango-light);
     position: relative;
 }
@@ -735,7 +750,7 @@ textarea.contact-input {
 footer {
     background-color: var(--choco-dark);
     color: var(--white);
-    padding: 120px 5% 40px;
+    padding: 120px 0 40px;
     text-align: center;
 }
 
@@ -933,9 +948,12 @@ footer {
     }
 
     .hero {
-        flex-direction: column;
         text-align: center;
         padding-top: 120px;
+    }
+
+    .hero > .container {
+        flex-direction: column;
     }
 
     .hero-content {
